@@ -1,0 +1,29 @@
+header{
+    height: 70px;
+   
+}
+header img{
+    width: 180px;
+    height: 80px;
+    object-fit: scale-down;
+}
+.header--icone{
+    display: flex;
+    img{
+        width: 180px;
+        height: 80px;
+        object-fit: scale-down;
+        padding-left: 5rem;
+    }
+    i{
+        padding-top: 2rem;
+        padding-left: 1rem;
+    }
+}
+.localisation{
+    background-color: $couleur-background;
+    p {
+        margin: 0;
+        padding: 1rem;
+    }
+}

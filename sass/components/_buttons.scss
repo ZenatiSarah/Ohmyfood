@@ -1,0 +1,26 @@
+.section__decouvrir{
+    padding-bottom: 2rem;
+    button{
+        padding: 1rem;
+        border-radius: 2rem;
+        border: #b160dc;
+        background-color: #d56cdb;
+        color: #ffff;
+        box-shadow: 5px 5px 10px #cacaca;
+        width: 14rem;
+    }
+} 
+button{
+    padding: 1rem;
+    border-radius: 2rem;
+    background: linear-gradient(#f17df7, #b160dc);
+   /* border: #b160dc;
+    background-color: #d56cdb;*/
+    color: #ffff;
+    box-shadow: 5px 5px 10px #cacaca;
+    margin-bottom: 2rem;
+    width: 180px;
+    font-size: medium;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
