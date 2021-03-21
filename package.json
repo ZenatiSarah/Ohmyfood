@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./docs/public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZenatiSarah/Ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZenatiSarah/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/ZenatiSarah/Ohmyfood#readme"
+}
