@@ -145,6 +145,7 @@ header img {
   /*border: blue solid 1px;*/
   margin: 0px 20px 25px 20px;
   box-shadow: 3px 3px 3px #c4c3c3;
+  background-color: #ffffff;
 }
 
 .container__plats p {
@@ -265,11 +266,11 @@ footer {
   margin-left: 15px;
 }
 
-.footer__logo img {
-  width: 100px;
-  height: 50px;
-  object-fit: scale-down;
-  margin-left: 1rem;
+.footer__logo p {
+  font-family: Shrikhand;
+  color: #fff;
+  margin: 0px;
+  padding: 1rem 0px 1rem 1rem;
 }
 
 .titre {
@@ -282,6 +283,7 @@ footer {
   margin: 0px 0px 0px 1rem;
   text-align: start;
   font-size: xx-large;
+  font-family: Shrikhand;
 }
 
 .prix {
