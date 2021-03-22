@@ -25,18 +25,36 @@
         background-size: cover;
     }
  }
-.h-card{
-    margin-top: 10px;
-    text-align: start;
-    margin-bottom: 0px;
-    margin-left: 15px;
-} 
-.p-card{
-    margin-top: 2px;
-    text-align: start;
-    margin-bottom: 0px;
-    margin-left: 15px;
+.texte--card{
+    display: flex;
+    flex-direction: row;
+    .texte{
+        flex-direction: column;
+        height: 4rem;
+        padding: 0px;
+        width: 50%;
+        .h-card{
+            margin-top: 10px;
+            text-align: start;
+            margin-bottom: 0px;
+            margin-left: 15px;
+        } 
+        .p-card{
+            margin-top: 2px;
+            text-align: start;
+            margin-bottom: 0px;
+            margin-left: 15px;
+        }
+    }
+    .favoris{
+        width: 50%;
+        i{
+            margin-top: 1.5rem;
+            margin-left: 7rem;
+        }
+    }
 }
+
 .footer__logo{
     p{
         font-family: Shrikhand;

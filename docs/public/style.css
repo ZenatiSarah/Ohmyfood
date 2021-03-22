@@ -252,6 +252,68 @@ footer {
   background-size: cover;
 }
 
+.texte--card {
+  display: flex;
+  flex-direction: row;
+}
+.texte--card .texte {
+  flex-direction: column;
+  height: 4rem;
+  padding: 0px;
+  width: 50%;
+}
+.texte--card .texte .h-card {
+  margin-top: 10px;
+  text-align: start;
+  margin-bottom: 0px;
+  margin-left: 15px;
+}
+.texte--card .texte .p-card {
+  margin-top: 2px;
+  text-align: start;
+  margin-bottom: 0px;
+  margin-left: 15px;
+}
+.texte--card .favoris {
+  width: 50%;
+}
+.texte--card .favoris i {
+  margin-top: 1.5rem;
+  margin-left: 7rem;
+}
+
+.footer__logo p {
+  font-family: Shrikhand;
+  color: #fff;
+  margin: 0px;
+  padding: 1rem 0px 1rem 1rem;
+}
+
+.titre-favoris {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  width: 70%;
+}
+.titre-favoris p {
+  padding: 2rem 0px 2rem 0px;
+  margin: 0px 0px 0px 1rem;
+  text-align: start;
+  font-size: xx-large;
+  font-family: Shrikhand;
+}
+.titre-favoris .favoris {
+  width: 0;
+}
+.titre-favoris .favoris i {
+  margin-top: 2.5rem;
+  margin-left: 4rem;
+  font-size: x-large;
+}
+
 .h-card {
   margin-top: 10px;
   text-align: start;
@@ -264,26 +326,6 @@ footer {
   text-align: start;
   margin-bottom: 0px;
   margin-left: 15px;
-}
-
-.footer__logo p {
-  font-family: Shrikhand;
-  color: #fff;
-  margin: 0px;
-  padding: 1rem 0px 1rem 1rem;
-}
-
-.titre {
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  margin-top: 0px;
-}
-.titre h1 {
-  padding: 2rem 0px 2rem 0px;
-  margin: 0px 0px 0px 1rem;
-  text-align: start;
-  font-size: xx-large;
-  font-family: Shrikhand;
 }
 
 .prix {
