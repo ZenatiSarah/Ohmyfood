@@ -16,4 +16,9 @@ button{
     font-size: medium;
     margin-top: 2rem;
     margin-bottom: 5rem;
+    cursor: pointer;
+    &:hover{
+        background: linear-gradient(#e98fee, #c784eb);
+        box-shadow: 10px 10px 10px #a8a6a6;
+    }
 }
