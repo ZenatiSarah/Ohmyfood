@@ -194,11 +194,11 @@ footer {
 }
 
 .container-vide {
-  margin-top: -45px;
+  margin-top: -33px;
   background-color: white;
   position: relative;
   z-index: 10000;
-  height: 50px;
+  height: 30px;
   border-top-right-radius: 35px;
   border-top-left-radius: 35px;
   margin-bottom: 0px;
