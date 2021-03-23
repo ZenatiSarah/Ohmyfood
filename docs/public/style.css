@@ -389,13 +389,43 @@ footer {
   justify-content: space-between;
 }
 
-.article__entrees {
+.article__entrees, .article__desserts {
   animation: fadein 2s;
   -moz-animation: fadein 2s;
   /* Firefox */
   -webkit-animation: fadein 2s;
   /* Safari et Chrome */
   -o-animation: fadein 2s;
+  /* Opera */
+  -webkit-transition-delay: 500ms;
+  -moz-transition-delay: 500ms;
+  -ms-transition-delay: 500ms;
+  -o-transition-delay: 500ms;
+  transition-delay: 500ms;
+}
+
+.article__plats {
+  animation: fadein 8s;
+  -moz-animation: fadein 8s;
+  /* Firefox */
+  -webkit-animation: fadein 8s;
+  /* Safari et Chrome */
+  -o-animation: fadein 8s;
+  /* Opera */
+  -webkit-transition-delay: 500ms;
+  -moz-transition-delay: 500ms;
+  -ms-transition-delay: 500ms;
+  -o-transition-delay: 500ms;
+  transition-delay: 500ms;
+}
+
+.article__desserts {
+  animation: fadein 12s;
+  -moz-animation: fadein 12s;
+  /* Firefox */
+  -webkit-animation: fadein 12s;
+  /* Safari et Chrome */
+  -o-animation: fadein 12s;
   /* Opera */
   -webkit-transition-delay: 500ms;
   -moz-transition-delay: 500ms;

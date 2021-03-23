@@ -51,16 +51,14 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.article__entrees{
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari et Chrome */
-    -o-animation: fadein 2s; /* Opera */
-    -webkit-transition-delay: 500ms;
-    -moz-transition-delay: 500ms;
-    -ms-transition-delay: 500ms;
-    -o-transition-delay: 500ms;
-    transition-delay: 500ms;
+.article__entrees, .article__desserts{
+    @include anim_entrees
+}
+.article__plats{
+    @include anim_plats
+}
+.article__desserts{
+    @include anim_desserts
 }
 @keyframes fadein {
     from {
