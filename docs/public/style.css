@@ -59,7 +59,7 @@ header img {
 .header--icone i {
   padding-top: 2rem;
   padding-left: 1rem;
-  color: black;
+  color: #353535;
 }
 
 .localisation {
@@ -74,7 +74,7 @@ header img {
   max-width: 374px;
 }
 .container__img img {
-  margin-top: 15px;
+  margin-top: 0px;
   width: 100%;
   height: 250px;
   object-fit: scale-down;
@@ -122,6 +122,16 @@ header img {
 }
 .fonctionnement__list .a__one {
   padding-right: 0px;
+  display: flex;
+}
+.fonctionnement__list .a__one #cercle {
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+  margin-left: -25px;
+  border-radius: 20px;
+  background: #9356DC;
+  color: #ffffff;
 }
 
 .restaurant__card {
@@ -181,6 +191,17 @@ footer {
   margin: 0 0 0 1rem;
   color: white;
   text-decoration: none;
+}
+
+.container-vide {
+  margin-top: -45px;
+  background-color: white;
+  position: relative;
+  z-index: 10000;
+  height: 50px;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  margin-bottom: 0px;
 }
 
 .fa-map-marker-alt:before {
@@ -320,7 +341,7 @@ footer {
   width: 70%;
 }
 .titre-favoris p {
-  padding: 2rem 0px 2rem 0px;
+  padding: 0rem 0px 2rem 0px;
   margin: 0px 0px 0px 1rem;
   text-align: start;
   font-size: xx-large;
@@ -330,7 +351,7 @@ footer {
   width: 0;
 }
 .titre-favoris .favoris i {
-  margin-top: 2.5rem;
+  margin-top: 9px;
   margin-left: 4rem;
   font-size: x-large;
 }
@@ -349,6 +370,12 @@ footer {
   margin-left: 15px;
 }
 
+.div-anim {
+  display: none;
+  height: 100%;
+  width: 20px;
+}
+
 .prix {
   padding-top: 5px 0px 0px 0px;
   margin-right: 15px;
@@ -360,6 +387,48 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.article__entrees {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari et Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+  -webkit-transition-delay: 500ms;
+  -moz-transition-delay: 500ms;
+  -ms-transition-delay: 500ms;
+  -o-transition-delay: 500ms;
+  transition-delay: 500ms;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* sur Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* sur Safari et Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

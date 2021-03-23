@@ -7,7 +7,7 @@
     padding: 0px;
     width: 70%;
     p {
-        padding: 2rem 0px 2rem 0px;
+        padding: 0rem 0px 2rem 0px;
         margin: 0px 0px 0px 1rem;
         text-align: start;
         font-size: xx-large;
@@ -16,7 +16,7 @@
     .favoris{
         width: 0;
         i{
-            margin-top: 2.5rem;
+            margin-top: 9px;
             margin-left: 4rem;
             font-size: x-large;
         }
@@ -35,6 +35,11 @@
     margin-bottom: 0px;
     margin-left: 15px;
 }
+.div-anim{
+    display: none;
+    height: 100%;
+    width: 20px;
+}
 .prix{
     padding-top: 5px 0px 0px 0px;
     margin-right: 15px;
@@ -45,4 +50,39 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.article__entrees{
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari et Chrome */
+    -o-animation: fadein 2s; /* Opera */
+    -webkit-transition-delay: 500ms;
+    -moz-transition-delay: 500ms;
+    -ms-transition-delay: 500ms;
+    -o-transition-delay: 500ms;
+    transition-delay: 500ms;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* sur Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* sur Safari et Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
