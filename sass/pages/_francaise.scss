@@ -51,7 +51,7 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.article__entrees, .article__desserts{
+.article__entrees{
     @include anim_entrees
 }
 .article__plats{

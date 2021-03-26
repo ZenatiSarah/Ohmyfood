@@ -5,7 +5,6 @@
 .cards{
     height: 195px;
     border-radius: 15px;
-    /*border: blue solid 1px;*/
     margin: 0px 20px 25px 20px;
     box-shadow: 3px 3px 3px #c4c3c3;
 }
@@ -28,22 +27,6 @@
 .texte--card{
     display: flex;
     flex-direction: row;
-    /*.loader {
-        color: #ffffff;
-        font-size: 90px;
-        text-indent: -9999em;
-        overflow: hidden;
-        width: 1em;
-        height: 1em;
-        border-radius: 50%;
-        margin: 72px auto;
-        position: relative;
-        -webkit-transform: translateZ(0);
-        -ms-transform: translateZ(0);
-        transform: translateZ(0);
-        -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
-        animation: load6 1.7s infinite ease, round 1.7s infinite ease;
-      }*/
     
     .texte{
         flex-direction: column;
@@ -65,11 +48,28 @@
     }
     .favoris{
         width: 50%;
-        i{
+        .four-vide{
+            @include icone-margin;
+            opacity: 1;
+            &:hover{
+                opacity: 0;
+            }
+        }
+        
+    }
+    
+        .four-plein{
             margin-top: 1.5rem;
             margin-left: 7rem;
+           
+            opacity: 1;
+            &:hover{
+                background-color: linear-gradient(#f17df7, #b160dc);
+                opacity: 1;
+            }
         }
-    }
+    
+    
 }
 
 .footer__logo{
