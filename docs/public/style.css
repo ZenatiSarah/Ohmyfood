@@ -37,6 +37,58 @@ button:hover {
   box-shadow: 10px 10px 10px #a8a6a6;
 }
 
+.animation-loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  background-color: rgba(255, 255, 255, 0.7);
+  animation: loader 1500ms linear infinite;
+}
+
+.loader {
+  position: absolute;
+  animation: vanish 2s 3s both linear;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes container {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes vanish {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
 header {
   height: 70px;
 }
@@ -251,6 +303,7 @@ footer {
 .cards__restaurants {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .cards {
@@ -258,6 +311,7 @@ footer {
   border-radius: 15px;
   margin: 0px 20px 25px 20px;
   box-shadow: 3px 3px 3px #c4c3c3;
+  position: relative;
 }
 
 .photos_items {
@@ -299,24 +353,34 @@ footer {
   margin-bottom: 0px;
   margin-left: 15px;
 }
-.texte--card .favoris {
-  width: 50%;
+
+.favoris {
+  position: absolute;
+  right: 2rem;
 }
-.texte--card .favoris .four-vide {
+.favoris .four-vide {
   margin-top: 1.5rem;
   margin-left: 7rem;
   opacity: 1;
 }
-.texte--card .favoris .four-vide:hover {
+.favoris .four-vide:hover {
   opacity: 0;
 }
-.texte--card .four-plein {
-  margin-top: 1.5rem;
-  margin-left: 7rem;
-  opacity: 1;
+
+.favoris_second {
+  position: absolute;
+  right: 53px;
 }
-.texte--card .four-plein:hover {
-  background-color: linear-gradient(#f17df7, #b160dc);
+
+.four-plein {
+  margin-top: 1.5rem;
+  margin-left: 0;
+  opacity: 0;
+  position: absolute;
+}
+.four-plein:hover {
+  color: #b160dc;
+  border-color: #b160dc;
   opacity: 1;
 }
 
