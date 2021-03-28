@@ -36,3 +36,22 @@
     margin-top: 1.5rem;
     margin-left: 7rem;
 }
+@mixin container__titre-menu{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    width: 370px;
+}
+@mixin titre-menu {
+    padding: 0rem 0px 2rem 0px;
+        margin: 0px 0rem 0px 1rem;
+        text-align: start;
+        font-size: 1.8rem;
+        font-family: Shrikhand;
+}
+@mixin icone-titre {
+    margin-top:0.5rem; font-size: x-large;
+}

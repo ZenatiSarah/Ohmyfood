@@ -1,0 +1,10 @@
+.titre__favoris--palette{
+    @include container__titre-menu;
+    p {
+        @include titre-menu;
+    }
+    .favoris__title--palette{
+        margin-left: 2rem;
+        i{@include icone-titre;}
+    } 
+}

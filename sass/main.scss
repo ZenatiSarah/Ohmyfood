@@ -1,7 +1,5 @@
 @import "./utils/variables";
-@import "./utils/fonctions";
 @import "./utils/mixins";
-@import "./utils/extensions";
 
 @import "./base/base";
 @import "./base/typography";
@@ -10,13 +8,13 @@
 @import "./components/loader";
 
 @import "./layout/header";
-@import "./layout/nav";
 @import "./layout/container";
-@import "./layout/form";
 @import "./layout/icone";
 
 
-@import "./pages/work";
+@import "./pages/palette";
+@import "./pages/note";
+@import "./pages/delice";
 @import "./pages/accueil";
 @import "./pages/francaise";
 

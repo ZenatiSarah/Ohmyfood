@@ -1,28 +1,24 @@
-.titre-favoris{
+.titre__favoris--francaise{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-top: 0px;
     display: flex;
     flex-direction: row;
     padding: 0px;
-    width: 70%;
+    width: 370px;
     p {
         padding: 0rem 0px 2rem 0px;
-        margin: 0px 0px 0px 1rem;
+        margin: 0px 0rem 0px 1rem;
         text-align: start;
         font-size: xx-large;
         font-family: Shrikhand;
     }
-    .favoris{
-        width: 0;
-        i{
-            margin-top: 9px;
-            margin-left: 4rem;
-            font-size: x-large;
-        }
-    }
-    
+    .favoris__title--francaise{
+        margin-left: 4.5rem;
+        i{margin-top:0.8rem; font-size: x-large;}
+    } 
 }
+
 .h-card{
     margin-top: 10px;
     text-align: start;

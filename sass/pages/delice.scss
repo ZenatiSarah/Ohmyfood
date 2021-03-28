@@ -1,0 +1,10 @@
+.titre__favoris--delice{
+    @include container__titre-menu;
+    p {
+        @include titre-menu;
+    }
+    .favoris__title--delice{
+        margin-left: 2rem;
+        i{@include icone-titre;}
+    } 
+}

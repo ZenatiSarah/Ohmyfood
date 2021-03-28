@@ -1,0 +1,10 @@
+.titre__favoris--note{
+    @include container__titre-menu;
+    p {
+        @include titre-menu;
+    }
+    .favoris__title--note{
+        margin-left: 2rem;
+        i{@include icone-titre;}
+    } 
+}
