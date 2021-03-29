@@ -9,6 +9,7 @@
         .vide{
             @include icone-titre;opacity: 1;
             position: absolute;
+            color: #777575;
             &:hover{
                 opacity: 0;
             }
@@ -24,8 +25,14 @@
         position: absolute;
         &:hover{
             opacity: 1;
-            color:  #b160dc;
-            border-color: #b160dc;
+            background:-moz-linear-gradient( #f17df7, #b160dc); 
+            background: -webkit-linear-gradient( #f17df7, #b160dc); 
+            background: linear-gradient(#f17df7, #b160dc);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            border-color: linear-gradient(#f17df7, #b160dc);
+            -webkit-text-fill-color:transparent;
         }
     }
 }

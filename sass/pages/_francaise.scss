@@ -20,6 +20,8 @@
             margin-top:0.8rem; 
             font-size: x-large;
             opacity: 1;
+            position: absolute;
+            color: #777575;
             &:hover{
                 opacity: 0;
             }
@@ -27,16 +29,24 @@
     } 
 }
 .favoris_pleinfr{
+    position: relative;
     .pleinfr{
         margin-top:0.8rem; 
         font-size: x-large;
         opacity: 0;
-        right: 1.8rem;
+        right: -24px;
         position: absolute;
         &:hover{
             opacity: 1;
-            color:  #b160dc;
-            border-color: #b160dc;
+            background:-moz-linear-gradient( #f17df7, #b160dc); 
+            background: -webkit-linear-gradient( #f17df7, #b160dc); 
+            background: linear-gradient(#f17df7, #b160dc);
+            -webkit-background-clip: text;
+            // padding-top: 3px;
+            -moz-background-clip: text;
+            background-clip: text;
+            border-color: linear-gradient(#f17df7, #b160dc);
+            -webkit-text-fill-color:transparent;
         }
     }
 }

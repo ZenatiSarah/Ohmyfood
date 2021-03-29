@@ -314,7 +314,14 @@ footer {
   }
 }
 .bloc:hover {
-  background-color: gray;
+  position: absolute;
+  height: 4.5rem;
+  width: 4rem;
+  bottom: -1.6rem;
+  left: 17.6rem;
+  display: flex;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
   animation: mymove 1s both linear;
   animation-timing-function: linear;
   animation-timing-function: cubic-bezier(0, 0, 1, 1);
@@ -339,11 +346,11 @@ footer {
 @keyframes mymove {
   50% {
     background-color: #99E2D0;
-    left: 18rem;
+    left: 17rem;
   }
   100% {
     background-color: #99E2D0;
-    left: 18rem;
+    left: 17rem;
   }
 }
 .titre__favoris--palette {
@@ -371,6 +378,7 @@ footer {
   font-size: x-large;
   opacity: 1;
   position: absolute;
+  color: #777575;
 }
 .titre__favoris--palette .favoris-vide .vide:hover {
   opacity: 0;
@@ -384,8 +392,14 @@ footer {
 }
 .favoris_plein .plein:hover {
   opacity: 1;
-  color: #b160dc;
-  border-color: #b160dc;
+  background: -moz-linear-gradient(#f17df7, #b160dc);
+  background: -webkit-linear-gradient(#f17df7, #b160dc);
+  background: linear-gradient(#f17df7, #b160dc);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  border-color: linear-gradient(#f17df7, #b160dc);
+  -webkit-text-fill-color: transparent;
 }
 
 .titre__favoris--note {
@@ -413,6 +427,7 @@ footer {
   font-size: x-large;
   opacity: 1;
   position: absolute;
+  color: #777575;
 }
 .titre__favoris--note .favoris-vide .vide:hover {
   opacity: 0;
@@ -426,8 +441,14 @@ footer {
 }
 .favoris_plein .plein:hover {
   opacity: 1;
-  color: #b160dc;
-  border-color: #b160dc;
+  background: -moz-linear-gradient(#f17df7, #b160dc);
+  background: -webkit-linear-gradient(#f17df7, #b160dc);
+  background: linear-gradient(#f17df7, #b160dc);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  border-color: linear-gradient(#f17df7, #b160dc);
+  -webkit-text-fill-color: transparent;
 }
 
 .titre__favoris--delice {
@@ -455,6 +476,7 @@ footer {
   font-size: x-large;
   opacity: 1;
   position: absolute;
+  color: #777575;
 }
 .titre__favoris--delice .favoris-vide .vide:hover {
   opacity: 0;
@@ -468,8 +490,14 @@ footer {
 }
 .favoris_plein .plein:hover {
   opacity: 1;
-  color: #b160dc;
-  border-color: #b160dc;
+  background: -moz-linear-gradient(#f17df7, #b160dc);
+  background: -webkit-linear-gradient(#f17df7, #b160dc);
+  background: linear-gradient(#f17df7, #b160dc);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  border-color: linear-gradient(#f17df7, #b160dc);
+  -webkit-text-fill-color: transparent;
 }
 
 .cards__restaurants {
@@ -610,22 +638,33 @@ footer {
   margin-top: 0.8rem;
   font-size: x-large;
   opacity: 1;
+  position: absolute;
+  color: #777575;
 }
 .titre__favoris--francaise .favoris-videfr .videfr:hover {
   opacity: 0;
 }
 
+.favoris_pleinfr {
+  position: relative;
+}
 .favoris_pleinfr .pleinfr {
   margin-top: 0.8rem;
   font-size: x-large;
   opacity: 0;
-  right: 1.8rem;
+  right: -24px;
   position: absolute;
 }
 .favoris_pleinfr .pleinfr:hover {
   opacity: 1;
-  color: #b160dc;
-  border-color: #b160dc;
+  background: -moz-linear-gradient(#f17df7, #b160dc);
+  background: -webkit-linear-gradient(#f17df7, #b160dc);
+  background: linear-gradient(#f17df7, #b160dc);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  border-color: linear-gradient(#f17df7, #b160dc);
+  -webkit-text-fill-color: transparent;
 }
 
 .h-card {

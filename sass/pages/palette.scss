@@ -4,8 +4,14 @@
     100%{transform: translateX(-44px);}
 }
 .bloc:hover{
-
-    background-color: gray;
+    position: absolute;
+    height: 4.5rem;
+    width: 4rem;
+    bottom: -1.6rem;
+    left: 17.6rem;
+    display: flex;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
     animation: mymove 1s both linear;
     animation-timing-function: linear;
     animation-timing-function: cubic-bezier(0,0,1,1);
@@ -28,8 +34,8 @@
     }
 }
 @keyframes mymove {
-	50%{background-color:$color-tertiaire; left: 18rem; }
-  	100%{background-color:$color-tertiaire; left:18rem;}
+	50%{background-color:$color-tertiaire; left: 17rem; }
+  	100%{background-color:$color-tertiaire; left:17rem;}
 }
 
 
@@ -45,6 +51,7 @@
         .vide{
             @include icone-titre;opacity: 1;
             position: absolute;
+            color: #777575;
             &:hover{
                 opacity: 0;
             }
@@ -60,8 +67,14 @@
         position: absolute;
         &:hover{
             opacity: 1;
-            color:  #b160dc;
-            border-color: #b160dc;
+            background:-moz-linear-gradient( #f17df7, #b160dc); 
+            background: -webkit-linear-gradient( #f17df7, #b160dc); 
+            background: linear-gradient(#f17df7, #b160dc);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            border-color: linear-gradient(#f17df7, #b160dc);
+            -webkit-text-fill-color:transparent;
         }
     }
 }
