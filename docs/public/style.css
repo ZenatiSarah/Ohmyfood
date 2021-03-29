@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  max-width: 400px;
+  max-width: 374px;
   margin: 0 auto;
   /*background-color: #868585;*/
 }
@@ -317,7 +317,7 @@ footer {
   position: absolute;
   height: 4.5rem;
   width: 4rem;
-  bottom: -1.6rem;
+  bottom: -1.7rem;
   left: 17.6rem;
   display: flex;
   border-bottom-right-radius: 15px;
@@ -347,11 +347,11 @@ footer {
 @keyframes mymove {
   50% {
     background-color: #99E2D0;
-    left: 17rem;
+    left: 18rem;
   }
   100% {
     background-color: #99E2D0;
-    left: 17rem;
+    left: 18rem;
   }
 }
 .titre__favoris--palette {
@@ -569,6 +569,21 @@ footer {
   color: #fff;
   margin: 0px;
   padding: 1rem 0px 1rem 1rem;
+}
+
+.new {
+  position: absolute;
+  background-color: #99E2D0;
+  left: 15rem;
+  height: 2rem;
+  width: 5rem;
+  top: 13px;
+  border-radius: 3px;
+}
+.new p {
+  margin-top: 4px;
+  color: #39a98e;
+  font-weight: bold;
 }
 
 .titre__favoris--francaise {

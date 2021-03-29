@@ -89,3 +89,21 @@
         padding: 1rem 0px 1rem 1rem;  
     }
 } 
+
+.new{
+    position: absolute;
+    background-color:$color-tertiaire;
+    left: 15rem;
+    height: 2rem;
+    width: 5rem;
+    top: 13px;
+    border-radius: 3px;
+    p{
+        margin-top: 4px;
+        color: #39a98e;
+        font-weight: bold;
+    }
+
+}
+
+
