@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  max-width: 374px;
+  max-width: 400px;
   margin: 0 auto;
   /*background-color: #868585;*/
 }
@@ -213,6 +213,7 @@ header img {
   margin: 0px 20px 25px 20px;
   box-shadow: 3px 3px 3px #c4c3c3;
   background-color: #ffffff;
+  position: relative;
 }
 
 .container__plats p {
@@ -304,6 +305,55 @@ footer {
   margin-top: 1rem;
 }
 
+@keyframes anim-prix {
+  50% {
+    transform: translate(-44px, 0);
+  }
+  100% {
+    transform: translateX(-44px);
+  }
+}
+.bloc:hover {
+  position: absolute;
+  height: 4.5rem;
+  width: 4rem;
+  bottom: -1.6rem;
+  left: 17.6rem;
+  display: flex;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: gray;
+  animation: mymove 1s both linear;
+  animation-timing-function: linear;
+  animation-timing-function: cubic-bezier(0, 0, 1, 1);
+}
+.bloc:hover i {
+  margin-top: 1.5rem;
+  font-size: larger;
+  color: #fff;
+}
+.bloc:hover .prix {
+  animation-name: anim-prix;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation: anim-prix 1s both linear;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  margin-bottom: 0px;
+  margin-top: 2rem;
+  margin-right: 0rem;
+}
+
+@keyframes mymove {
+  50% {
+    background-color: #99E2D0;
+    left: 17rem;
+  }
+  100% {
+    background-color: #99E2D0;
+    left: 17rem;
+  }
+}
 .titre__favoris--palette {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -320,12 +370,30 @@ footer {
   font-size: 1.8rem;
   font-family: Shrikhand;
 }
-.titre__favoris--palette .favoris__title--palette {
+.titre__favoris--palette .favoris-vide {
   margin-left: 2rem;
+  position: relative;
 }
-.titre__favoris--palette .favoris__title--palette i {
+.titre__favoris--palette .favoris-vide .vide {
   margin-top: 0.5rem;
   font-size: x-large;
+  opacity: 1;
+  position: absolute;
+}
+.titre__favoris--palette .favoris-vide .vide:hover {
+  opacity: 0;
+}
+
+.favoris_plein .plein {
+  margin-top: 0.5rem;
+  font-size: x-large;
+  opacity: 0;
+  position: absolute;
+}
+.favoris_plein .plein:hover {
+  opacity: 1;
+  color: #b160dc;
+  border-color: #b160dc;
 }
 
 .titre__favoris--note {
@@ -344,12 +412,30 @@ footer {
   font-size: 1.8rem;
   font-family: Shrikhand;
 }
-.titre__favoris--note .favoris__title--note {
+.titre__favoris--note .favoris-vide {
   margin-left: 2rem;
+  position: relative;
 }
-.titre__favoris--note .favoris__title--note i {
+.titre__favoris--note .favoris-vide .vide {
   margin-top: 0.5rem;
   font-size: x-large;
+  opacity: 1;
+  position: absolute;
+}
+.titre__favoris--note .favoris-vide .vide:hover {
+  opacity: 0;
+}
+
+.favoris_plein .plein {
+  margin-top: 0.5rem;
+  font-size: x-large;
+  opacity: 0;
+  position: absolute;
+}
+.favoris_plein .plein:hover {
+  opacity: 1;
+  color: #b160dc;
+  border-color: #b160dc;
 }
 
 .titre__favoris--delice {
@@ -368,12 +454,30 @@ footer {
   font-size: 1.8rem;
   font-family: Shrikhand;
 }
-.titre__favoris--delice .favoris__title--delice {
+.titre__favoris--delice .favoris-vide {
   margin-left: 2rem;
+  position: relative;
 }
-.titre__favoris--delice .favoris__title--delice i {
+.titre__favoris--delice .favoris-vide .vide {
   margin-top: 0.5rem;
   font-size: x-large;
+  opacity: 1;
+  position: absolute;
+}
+.titre__favoris--delice .favoris-vide .vide:hover {
+  opacity: 0;
+}
+
+.favoris_plein .plein {
+  margin-top: 0.5rem;
+  font-size: x-large;
+  opacity: 0;
+  position: absolute;
+}
+.favoris_plein .plein:hover {
+  opacity: 1;
+  color: #b160dc;
+  border-color: #b160dc;
 }
 
 .cards__restaurants {
@@ -483,12 +587,30 @@ footer {
   font-size: xx-large;
   font-family: Shrikhand;
 }
-.titre__favoris--francaise .favoris__title--francaise {
+.titre__favoris--francaise .favoris-videfr {
   margin-left: 4.5rem;
+  position: relative;
 }
-.titre__favoris--francaise .favoris__title--francaise i {
+.titre__favoris--francaise .favoris-videfr .videfr {
   margin-top: 0.8rem;
   font-size: x-large;
+  opacity: 1;
+}
+.titre__favoris--francaise .favoris-videfr .videfr:hover {
+  opacity: 0;
+}
+
+.favoris_pleinfr .pleinfr {
+  margin-top: 0.8rem;
+  font-size: x-large;
+  opacity: 0;
+  right: 1.8rem;
+  position: absolute;
+}
+.favoris_pleinfr .pleinfr:hover {
+  opacity: 1;
+  color: #b160dc;
+  border-color: #b160dc;
 }
 
 .h-card {
@@ -503,17 +625,14 @@ footer {
   text-align: start;
   margin-bottom: 0px;
   margin-left: 15px;
-}
-
-.div-anim {
-  display: none;
-  height: 100%;
-  width: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 14rem;
 }
 
 .prix {
-  padding-top: 5px 0px 0px 0px;
-  margin-right: 15px;
+  margin-right: 2rem;
   font-weight: bold;
   color: #353535;
 }
@@ -522,6 +641,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
 }
 
 .article__entrees {

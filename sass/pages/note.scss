@@ -3,8 +3,29 @@
     p {
         @include titre-menu;
     }
-    .favoris__title--note{
+    .favoris-vide{
         margin-left: 2rem;
-        i{@include icone-titre;}
-    } 
+        position: relative;
+        .vide{
+            @include icone-titre;opacity: 1;
+            position: absolute;
+            &:hover{
+                opacity: 0;
+            }
+        }
+        
+    }
+}
+
+.favoris_plein{
+    .plein{
+        @include icone-titre;
+        opacity: 0;
+        position: absolute;
+        &:hover{
+            opacity: 1;
+            color:  #b160dc;
+            border-color: #b160dc;
+        }
+    }
 }

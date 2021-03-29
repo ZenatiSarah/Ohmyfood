@@ -13,12 +13,33 @@
         font-size: xx-large;
         font-family: Shrikhand;
     }
-    .favoris__title--francaise{
+    .favoris-videfr{
         margin-left: 4.5rem;
-        i{margin-top:0.8rem; font-size: x-large;}
+        position: relative;
+        .videfr{
+            margin-top:0.8rem; 
+            font-size: x-large;
+            opacity: 1;
+            &:hover{
+                opacity: 0;
+            }
+        }
     } 
 }
-
+.favoris_pleinfr{
+    .pleinfr{
+        margin-top:0.8rem; 
+        font-size: x-large;
+        opacity: 0;
+        right: 1.8rem;
+        position: absolute;
+        &:hover{
+            opacity: 1;
+            color:  #b160dc;
+            border-color: #b160dc;
+        }
+    }
+}
 .h-card{
     margin-top: 10px;
     text-align: start;
@@ -30,15 +51,14 @@
     text-align: start;
     margin-bottom: 0px;
     margin-left: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 14rem;
 }
-.div-anim{
-    display: none;
-    height: 100%;
-    width: 20px;
-}
+
 .prix{
-    padding-top: 5px 0px 0px 0px;
-    margin-right: 15px;
+    margin-right: 2rem;
     font-weight: bold;
     color: $color-grey-fonce;
 }
@@ -46,6 +66,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
 .article__entrees{
     @include anim_entrees
