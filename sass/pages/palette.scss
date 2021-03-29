@@ -4,14 +4,7 @@
     100%{transform: translateX(-44px);}
 }
 .bloc:hover{
-    position: absolute;
-    height: 4.5rem;
-    width: 4rem;
-    bottom: -1.7rem;
-    left: 17.6rem;
-    display: flex;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+
     background-color: gray;
     animation: mymove 1s both linear;
     animation-timing-function: linear;
@@ -20,6 +13,7 @@
             margin-top: 1.5rem;
             font-size: larger;
             color: #fff;
+            
         }
     .prix{
         animation-name: anim-prix;

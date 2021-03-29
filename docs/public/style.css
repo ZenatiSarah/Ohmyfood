@@ -314,14 +314,6 @@ footer {
   }
 }
 .bloc:hover {
-  position: absolute;
-  height: 4.5rem;
-  width: 4rem;
-  bottom: -1.7rem;
-  left: 17.6rem;
-  display: flex;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
   background-color: gray;
   animation: mymove 1s both linear;
   animation-timing-function: linear;
@@ -537,6 +529,7 @@ footer {
 .favoris {
   position: absolute;
   right: 2rem;
+  color: #777575;
 }
 .favoris .four-vide {
   margin-top: 1.5rem;
@@ -553,14 +546,21 @@ footer {
 }
 
 .four-plein {
-  margin-top: 1.5rem;
+  margin-top: 21px;
   margin-left: 0;
   opacity: 0;
   position: absolute;
 }
 .four-plein:hover {
-  color: #b160dc;
-  border-color: #b160dc;
+  background: -moz-linear-gradient(#f17df7, #b160dc);
+  background: -webkit-linear-gradient(#f17df7, #b160dc);
+  background: linear-gradient(#f17df7, #b160dc);
+  -webkit-background-clip: text;
+  padding-top: 3px;
+  -moz-background-clip: text;
+  background-clip: text;
+  border-color: linear-gradient(#f17df7, #b160dc);
+  -webkit-text-fill-color: transparent;
   opacity: 1;
 }
 
