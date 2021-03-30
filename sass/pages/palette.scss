@@ -3,7 +3,27 @@
     50%{transform: translate(-44px, 0) }
     100%{transform: translateX(-44px);}
 }
+/*.cards__prix{
+    animation-name: anim-prix;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation: anim-prix 1s both linear;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    margin-bottom: 0px;
+    margin-top: 0rem;
+    margin-right: 0rem;
+    left: 20rem;
+    position: absolute;
+    font-weight: bold;
+    color: $color-grey-fonce;
+    
+}*/
+.bloc{
+    opacity:0;
+}
 .bloc:hover{
+    opacity: 1;
     position: absolute;
     height: 5rem;
     width: 4rem;
@@ -21,17 +41,21 @@
             color: #fff;
             
         }
-    .prix{
-        animation-name: anim-prix;
-        animation-duration: 1s;
-        animation-delay: 1s;
-        animation: anim-prix 1s both linear;
-        animation-timing-function: linear;
-        animation-iteration-count: 1;
-        margin-bottom: 0px;
-        margin-top: 2rem;
-        margin-right: 0rem;
-    }
+        p{
+            animation-name: anim-prix;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation: anim-prix 1s both linear;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            margin-bottom: 0px;
+            margin-top: 2rem;
+            margin-right: 0rem;
+            animation-name: anim-prix;
+            font-weight: bold;
+            color: $color-grey-fonce;
+        }
+    
 }
 @keyframes mymove {
 	50%{background-color:$color-tertiaire; left: 17rem; }

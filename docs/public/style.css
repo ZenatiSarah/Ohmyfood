@@ -313,9 +313,30 @@ footer {
     transform: translateX(-44px);
   }
 }
-.bloc:hover {
+.cards__prix {
+  animation-name: anim-prix;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation: anim-prix 1s both linear;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  margin-bottom: 0px;
+  margin-top: 0rem;
+  margin-right: 0rem;
+  left: 20rem;
   position: absolute;
-  height: 4.5rem;
+  font-weight: bold;
+  color: #353535;
+}
+
+.bloc {
+  opacity: 0;
+}
+
+.bloc:hover {
+  opacity: 1;
+  position: absolute;
+  height: 5rem;
   width: 4rem;
   bottom: -1.6rem;
   left: 17.6rem;
@@ -327,11 +348,11 @@ footer {
   animation-timing-function: cubic-bezier(0, 0, 1, 1);
 }
 .bloc:hover i {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   font-size: larger;
   color: #fff;
 }
-.bloc:hover .prix {
+.bloc:hover p {
   animation-name: anim-prix;
   animation-duration: 1s;
   animation-delay: 1s;
@@ -341,6 +362,9 @@ footer {
   margin-bottom: 0px;
   margin-top: 2rem;
   margin-right: 0rem;
+  animation-name: anim-prix;
+  font-weight: bold;
+  color: #353535;
 }
 
 @keyframes mymove {
@@ -682,13 +706,7 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 14rem;
-}
-
-.prix {
-  margin-right: 2rem;
-  font-weight: bold;
-  color: #353535;
+  width: 11rem;
 }
 
 .cards__texte--prix {
