@@ -1,5 +1,5 @@
 .container__img{
-    max-width: 374px;
+    max-width: 414px;
     img{
         margin-top: 0px;
         width: 100%;
@@ -76,14 +76,14 @@
         width: 35px;
     }
 }
-.cards--articles{
+.cards__articles{
     height: 70px;
     border-radius: 15px;
     /*border: blue solid 1px;*/
-    margin: 0px 20px 25px 20px;
+    margin-bottom: 2rem;
     box-shadow: 3px 3px 3px #c4c3c3;
     background-color: #ffffff;
-    position: relative;
+    display: flex;
 }
 
 .container__plats{

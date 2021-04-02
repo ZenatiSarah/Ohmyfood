@@ -68,14 +68,16 @@
 }
 
 
-.cards__texte--prix{
+.cards__articles--prix{
+    width: 100%;
+    /*border: 1px solid blue;*/
+    align-items: flex-end;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-}
-.article__entrees{
-    @include anim_entrees
+    justify-content: flex-end;
+    p{
+        margin-right: 5px;
+    }
 }
 .article__plats{
     @include anim_plats

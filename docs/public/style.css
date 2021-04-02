@@ -6,9 +6,37 @@ body {
 }
 
 .container {
-  max-width: 374px;
+  max-width: 414px;
   margin: 0 auto;
   /*background-color: #868585;*/
+}
+
+.cards__articles--texte {
+  width: 50%;
+}
+.cards__articles--texte .h-card {
+  margin-top: 5px;
+  text-align: start;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  /* border: 1px solid;*/
+  width: 13rem;
+}
+.cards__articles--texte .p-card {
+  margin-top: 2px;
+  text-align: start;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 10rem;
+  /*border: 1px solid;*/
+}
+
+.article__entrees, .article__desserts, .article__plats {
+  width: 90%;
+  padding-left: 1rem;
 }
 
 .section__decouvrir {
@@ -47,7 +75,8 @@ button:hover {
   margin: -76px 0 0 -76px;
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #3498db;
+  border-top: 16px solid #b160dc;
+  background-clip: text;
   background-color: rgba(255, 255, 255, 0.7);
   animation: loader 1500ms linear infinite;
 }
@@ -123,7 +152,7 @@ header img {
 }
 
 .container__img {
-  max-width: 374px;
+  max-width: 414px;
 }
 .container__img img {
   margin-top: 0px;
@@ -206,14 +235,14 @@ header img {
   width: 35px;
 }
 
-.cards--articles {
+.cards__articles {
   height: 70px;
   border-radius: 15px;
   /*border: blue solid 1px;*/
-  margin: 0px 20px 25px 20px;
+  margin-bottom: 2rem;
   box-shadow: 3px 3px 3px #c4c3c3;
   background-color: #ffffff;
-  position: relative;
+  display: flex;
 }
 
 .container__plats p {
@@ -305,41 +334,14 @@ footer {
   margin-top: 1rem;
 }
 
-@keyframes anim-prix {
-  50% {
-    transform: translate(-44px, 0);
-  }
-  100% {
-    transform: translateX(-44px);
-  }
-}
-.cards__prix {
-  animation-name: anim-prix;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation: anim-prix 1s both linear;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-  margin-bottom: 0px;
-  margin-top: 0rem;
-  margin-right: 0rem;
-  left: 20rem;
-  position: absolute;
-  font-weight: bold;
-  color: #353535;
-}
-
 .bloc {
   opacity: 0;
 }
 
 .bloc:hover {
   opacity: 1;
-  position: absolute;
-  height: 5rem;
-  width: 4rem;
-  bottom: -1.6rem;
-  left: 17.6rem;
+  height: 4.5rem;
+  width: 9rem;
   display: flex;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
@@ -348,23 +350,11 @@ footer {
   animation-timing-function: cubic-bezier(0, 0, 1, 1);
 }
 .bloc:hover i {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   font-size: larger;
   color: #fff;
-}
-.bloc:hover p {
-  animation-name: anim-prix;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation: anim-prix 1s both linear;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-  margin-bottom: 0px;
-  margin-top: 2rem;
-  margin-right: 0rem;
-  animation-name: anim-prix;
-  font-weight: bold;
-  color: #353535;
+  margin: 1.5rem 0rem 0rem 1rem;
+  animation: rotating 2s forwards;
 }
 
 @keyframes mymove {
@@ -375,6 +365,14 @@ footer {
   100% {
     background-color: #99E2D0;
     left: 17rem;
+  }
+}
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
   }
 }
 .titre__favoris--palette {
@@ -617,7 +615,7 @@ footer {
 }
 
 .footer__logo p {
-  font-family: Shrikhand;
+  font-family: "Shrikhand";
   color: #fff;
   margin: 0px;
   padding: 1rem 0px 1rem 1rem;
@@ -626,7 +624,7 @@ footer {
 .new {
   position: absolute;
   background-color: #99E2D0;
-  left: 15rem;
+  left: 70%;
   height: 2rem;
   width: 5rem;
   top: 13px;
@@ -709,26 +707,16 @@ footer {
   width: 11rem;
 }
 
-.cards__texte--prix {
+.cards__articles--prix {
+  width: 100%;
+  /*border: 1px solid blue;*/
+  align-items: flex-end;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  position: relative;
+  justify-content: flex-end;
 }
-
-.article__entrees {
-  animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  /* Firefox */
-  -webkit-animation: fadein 2s;
-  /* Safari et Chrome */
-  -o-animation: fadein 2s;
-  /* Opera */
-  -webkit-transition-delay: 500ms;
-  -moz-transition-delay: 500ms;
-  -ms-transition-delay: 500ms;
-  -o-transition-delay: 500ms;
-  transition-delay: 500ms;
+.cards__articles--prix p {
+  margin-right: 5px;
 }
 
 .article__plats {
