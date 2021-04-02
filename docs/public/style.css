@@ -12,7 +12,7 @@ body {
 }
 
 .cards__articles--texte {
-  width: 50%;
+  width: 77%;
 }
 .cards__articles--texte .h-card {
   margin-top: 5px;
@@ -20,7 +20,7 @@ body {
   margin-bottom: 0px;
   margin-left: 5px;
   /* border: 1px solid;*/
-  width: 13rem;
+  width: 15rem;
 }
 .cards__articles--texte .p-card {
   margin-top: 2px;
@@ -30,7 +30,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 10rem;
+  width: 14rem;
   /*border: 1px solid;*/
 }
 
@@ -708,7 +708,7 @@ footer {
 }
 
 .cards__articles--prix {
-  width: 100%;
+  width: 25%;
   /*border: 1px solid blue;*/
   align-items: flex-end;
   display: flex;
@@ -717,6 +717,7 @@ footer {
 }
 .cards__articles--prix p {
   margin-right: 5px;
+  font-weight: bold;
 }
 
 .article__plats {
