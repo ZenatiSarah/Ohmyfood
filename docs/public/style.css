@@ -205,7 +205,7 @@ header img {
   padding-right: 0px;
   display: flex;
 }
-.fonctionnement__list .a__one #cercle {
+.fonctionnement__list .a__one #cercle_one, .fonctionnement__list .a__one #cercle_two, .fonctionnement__list .a__one #cercle_three {
   width: 25px;
   height: 25px;
   margin-right: 25px;
