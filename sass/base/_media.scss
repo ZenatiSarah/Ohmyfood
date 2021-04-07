@@ -1,0 +1,15 @@
+@media screen and (min-width: 683px){
+    .new{
+        left: 85%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 683px){
+    .new{
+        left: 80%;
+    }
+}
+@media screen and (max-width: 500px){
+    .new{
+        left: 70%;
+    }
+}

@@ -39,6 +39,21 @@ body {
   padding-left: 1rem;
 }
 
+@media screen and (min-width: 683px) {
+  .new {
+    left: 85%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 683px) {
+  .new {
+    left: 80%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .new {
+    left: 70%;
+  }
+}
 .section__decouvrir {
   padding-bottom: 2rem;
 }
@@ -135,7 +150,7 @@ header img {
   width: 180px;
   height: 80px;
   object-fit: scale-down;
-  padding-left: 5rem;
+  margin: auto;
 }
 .header--icone i {
   padding-top: 2rem;
