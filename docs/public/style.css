@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  max-width: 414px;
+  width: 100%;
   margin: 0 auto;
   /*background-color: #868585;*/
 }
@@ -152,7 +152,7 @@ header img {
 }
 
 .container__img {
-  max-width: 414px;
+  width: 100%;
 }
 .container__img img {
   margin-top: 0px;
