@@ -365,10 +365,9 @@ footer {
   animation-timing-function: cubic-bezier(0, 0, 1, 1);
 }
 .bloc:hover i {
-  margin-top: 1.5rem;
   font-size: larger;
   color: #fff;
-  margin: 1.5rem 0rem 0rem 1rem;
+  margin: auto;
   animation: rotating 2s forwards;
 }
 
