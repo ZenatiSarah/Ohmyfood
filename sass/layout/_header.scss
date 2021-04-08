@@ -1,11 +1,12 @@
 header{
     height: 70px;
-   
+    font-family: "Shrikhand";
+    color: #000;
+    margin: auto;
 }
-header img{
-    width: 180px;
-    height: 80px;
-    object-fit: scale-down;
+header h1{
+    margin-bottom: 0px;
+    font-size: xx-large;
 }
 .header--icone{
     display: flex;

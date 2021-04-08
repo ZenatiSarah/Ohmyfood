@@ -1,15 +1,65 @@
-@media screen and (min-width: 683px){
+@media screen and (min-width:960px){
     .new{
-        left: 85%;
+        left: 80%;
+    }
+    .cards__restaurants {
+        flex-direction: row;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    .cards{
+        margin: auto;
+        margin-bottom: 2rem;
+        width: 45%;
+    }
+}
+@media screen and (min-width: 683px){
+    .fonctionnement__list {
+        .a__one{
+            margin: auto;
+            width: 50%;
+            margin-bottom: 2rem;
+        }
+        
+    }
+    .cards{
+        margin: auto;
+        margin-bottom: 2rem;
+        width: 45%;
+    }
+    .new{
+        left: 70%;
+    }
+    .cards__restaurants {
+        flex-direction: row;
+        margin: auto;
+        flex-wrap: wrap;
     }
 }
 @media screen and (min-width: 500px) and (max-width: 683px){
     .new{
         left: 80%;
     }
+    .cards{
+        margin: auto;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    .cards__restaurants {
+        margin: auto;
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 500px){
     .new{
         left: 70%;
+    }
+    .cards{
+        margin: auto;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+    .cards__restaurants{
+        flex-direction: column;
     }
 }

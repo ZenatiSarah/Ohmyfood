@@ -20,7 +20,7 @@ body {
   margin-bottom: 0px;
   margin-left: 5px;
   /* border: 1px solid;*/
-  width: 15rem;
+  width: 16rem;
 }
 .cards__articles--texte .p-card {
   margin-top: 2px;
@@ -36,22 +36,78 @@ body {
 
 .article__entrees, .article__desserts, .article__plats {
   width: 90%;
-  padding-left: 1rem;
+  margin: auto;
 }
 
-@media screen and (min-width: 683px) {
+@media screen and (min-width: 960px) {
   .new {
-    left: 85%;
+    left: 80%;
+  }
+
+  .cards__restaurants {
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 683px) {
+  .fonctionnement__list .a__one {
+    margin: auto;
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+
+  .cards {
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 45%;
+  }
+
+  .new {
+    left: 70%;
+  }
+
+  .cards__restaurants {
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 683px) {
   .new {
     left: 80%;
   }
+
+  .cards {
+    margin: auto;
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .cards__restaurants {
+    margin: auto;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 500px) {
   .new {
     left: 70%;
+  }
+
+  .cards {
+    margin: auto;
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+
+  .cards__restaurants {
+    flex-direction: column;
   }
 }
 .section__decouvrir {
@@ -135,12 +191,14 @@ button:hover {
 }
 header {
   height: 70px;
+  font-family: "Shrikhand";
+  color: #000;
+  margin: auto;
 }
 
-header img {
-  width: 180px;
-  height: 80px;
-  object-fit: scale-down;
+header h1 {
+  margin-bottom: 0px;
+  font-size: xx-large;
 }
 
 .header--icone {
@@ -180,7 +238,7 @@ header img {
   height: 290px;
   background-color: #f6f6f6;
 }
-.section__decouvrir h1 {
+.section__decouvrir h2 {
   padding: 2.5rem;
   padding-bottom: 0;
   margin-top: 0;
@@ -538,14 +596,12 @@ footer {
 
 .cards__restaurants {
   display: flex;
-  flex-direction: column;
   position: relative;
 }
 
 .cards {
   height: 195px;
   border-radius: 15px;
-  margin: 0px 20px 25px 20px;
   box-shadow: 3px 3px 3px #c4c3c3;
   position: relative;
 }
