@@ -19,18 +19,21 @@ body {
   text-align: start;
   margin-bottom: 0px;
   margin-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   /* border: 1px solid;*/
-  width: 16rem;
+  width: 18rem;
 }
 .cards__articles--texte .p-card {
   margin-top: 2px;
   text-align: start;
   margin-bottom: 0px;
   margin-left: 5px;
+  width: 14rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 14rem;
   /*border: 1px solid;*/
 }
 
