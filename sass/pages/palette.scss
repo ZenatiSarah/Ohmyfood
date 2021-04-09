@@ -35,7 +35,7 @@
 
 .titre__favoris--palette{
     @include container__titre-menu;
-    p {
+    h2 {
         @include titre-menu;
     }
     .favoris-vide{

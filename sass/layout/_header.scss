@@ -3,9 +3,14 @@ header{
     font-family: "Shrikhand";
     color: #000;
     margin: auto;
+    display: flex;
+}
+.header__img{
+    margin: auto;
 }
 header h1{
     margin-bottom: 0px;
+    margin-top: 0px;
     font-size: xx-large;
 }
 .header--icone{

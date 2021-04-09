@@ -197,10 +197,16 @@ header {
   font-family: "Shrikhand";
   color: #000;
   margin: auto;
+  display: flex;
+}
+
+.header__img {
+  margin: auto;
 }
 
 header h1 {
   margin-bottom: 0px;
+  margin-top: 0px;
   font-size: xx-large;
 }
 
@@ -459,7 +465,7 @@ footer {
   padding: 0px;
   width: 370px;
 }
-.titre__favoris--palette p {
+.titre__favoris--palette h2 {
   padding: 0rem 0px 2rem 0px;
   margin: 0px 0rem 0px 1rem;
   text-align: start;
@@ -508,7 +514,7 @@ footer {
   padding: 0px;
   width: 370px;
 }
-.titre__favoris--note p {
+.titre__favoris--note h2 {
   padding: 0rem 0px 2rem 0px;
   margin: 0px 0rem 0px 1rem;
   text-align: start;
@@ -557,7 +563,7 @@ footer {
   padding: 0px;
   width: 370px;
 }
-.titre__favoris--delice p {
+.titre__favoris--delice h2 {
   padding: 0rem 0px 2rem 0px;
   margin: 0px 0rem 0px 1rem;
   text-align: start;
@@ -717,7 +723,7 @@ footer {
   padding: 0px;
   width: 370px;
 }
-.titre__favoris--francaise p {
+.titre__favoris--francaise h2 {
   padding: 0rem 0px 2rem 0px;
   margin: 0px 0rem 0px 1rem;
   text-align: start;
