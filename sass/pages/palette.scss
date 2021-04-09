@@ -20,8 +20,8 @@
         }
 }
 @keyframes mymove {
-	50%{background-color:$color-tertiaire; left: 17rem; }
-  	100%{background-color:$color-tertiaire; left:17rem;}
+	0%{background-color:$color-tertiaire;transform: translateX(25%); }
+  	100%{background-color:$color-tertiaire; transform: translateX(0);}
 }
 
 @keyframes rotating {

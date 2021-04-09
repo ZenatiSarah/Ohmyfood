@@ -447,13 +447,13 @@ footer {
 }
 
 @keyframes mymove {
-  50% {
+  0% {
     background-color: #99E2D0;
-    left: 17rem;
+    transform: translateX(25%);
   }
   100% {
     background-color: #99E2D0;
-    left: 17rem;
+    transform: translateX(0);
   }
 }
 @keyframes rotating {
