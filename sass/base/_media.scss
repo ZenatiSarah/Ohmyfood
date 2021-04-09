@@ -12,8 +12,16 @@
         margin-bottom: 2rem;
         width: 45%;
     }
+    .animation-loader{
+        left: 45%;
+        top: 50%;
+    }
 }
 @media screen and (min-width: 683px){
+    .animation-loader{
+        left: 45%;
+        top: 50%;
+    }
     .fonctionnement__list {
         .a__one{
             margin: auto;
@@ -37,6 +45,10 @@
     }
 }
 @media screen and (min-width: 500px) and (max-width: 683px){
+    .animation-loader{
+        left: 60%;
+        top: 50%;
+    }
     .new{
         left: 80%;
     }
@@ -51,6 +63,10 @@
     }
 }
 @media screen and (max-width: 500px){
+    .animation-loader{
+        left: 60%;
+        top: 50%;
+    }
     .new{
         left: 70%;
     }

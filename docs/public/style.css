@@ -58,8 +58,18 @@ body {
     margin-bottom: 2rem;
     width: 45%;
   }
+
+  .animation-loader {
+    left: 45%;
+    top: 50%;
+  }
 }
 @media screen and (min-width: 683px) {
+  .animation-loader {
+    left: 45%;
+    top: 50%;
+  }
+
   .fonctionnement__list .a__one {
     margin: auto;
     width: 50%;
@@ -83,6 +93,11 @@ body {
   }
 }
 @media screen and (min-width: 500px) and (max-width: 683px) {
+  .animation-loader {
+    left: 60%;
+    top: 50%;
+  }
+
   .new {
     left: 80%;
   }
@@ -99,6 +114,11 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
+  .animation-loader {
+    left: 60%;
+    top: 50%;
+  }
+
   .new {
     left: 70%;
   }
@@ -141,8 +161,6 @@ button:hover {
 
 .animation-loader {
   position: absolute;
-  left: 50%;
-  top: 50%;
   z-index: 1;
   width: 120px;
   height: 120px;
@@ -150,7 +168,6 @@ button:hover {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid #b160dc;
-  background-clip: text;
   background-color: rgba(255, 255, 255, 0.7);
   animation: loader 1500ms linear infinite;
 }
@@ -158,14 +175,13 @@ button:hover {
 .loader {
   position: absolute;
   animation: vanish 2s 3s both linear;
-  left: 50%;
-  top: 50%;
   z-index: 1;
-  width: 120px;
-  height: 120px;
   margin: -76px 0 0 -76px;
   border: 16px solid #f3f3f3;
-  border-radius: 50%;
+  background-color: #f3f3f3;
+  height: 115vh;
+  width: 115vw;
+  opacity: 0.8;
 }
 
 @keyframes loader {
@@ -174,14 +190,6 @@ button:hover {
   }
   to {
     transform: rotate(360deg);
-  }
-}
-@keyframes container {
-  from {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
   }
 }
 @keyframes vanish {
@@ -841,11 +849,11 @@ footer {
 @keyframes fadein {
   from {
     opacity: 0;
-    margin-top: 100%;
+    transform: translateY(-25%);
   }
   to {
     opacity: 1;
-    margin-top: 0%;
+    transform: translateY(0%);
   }
 }
 @-moz-keyframes fadein {
