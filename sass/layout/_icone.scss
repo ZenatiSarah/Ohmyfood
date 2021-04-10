@@ -5,11 +5,17 @@
 .fas.fa-mobile-alt{
     padding-right: 15px;
     color: #7e7e7e;
+    :hover{
+        color: $color-primary;
+    }
 }
 
 .fas.fa-list-ul, .fa-store{
     padding-right: 15px;
     color: $color-grey;
+    :hover{
+        color: $color-primary;
+    }
 }
 .fa-heart.fa-lg{
     .one{
